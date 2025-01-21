@@ -1,0 +1,26 @@
+.search-container {
+    margin-bottom: 1rem;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: left;
+  }
+  .search-bar {
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 1rem;
+
+  }
+  .blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .blog-card {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }

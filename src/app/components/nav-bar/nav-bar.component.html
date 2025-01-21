@@ -1,0 +1,16 @@
+<nav [ngClass]="{'home-nav': isHomePage, 'default-nav': !isHomePage}">
+  <div class="navbar-container">
+    <div class="logo">
+      <a href="/">
+       <img [src]="isDarkTheme ? 'assets/assets/homi-b.svg' : 'assets/assets/homi.svg'" alt="Home" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <!-- <li><a href="/blogs">Blogs</a></li> -->
+      <li><a href="/experience">Experience</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><img [src]="isDarkTheme ? 'assets/assets/dark-b.svg' : 'assets/assets/dark.svg'" alt="Home" (click)="toggleTheme()"/></li>
+    </ul>
+  </div>
+</nav>

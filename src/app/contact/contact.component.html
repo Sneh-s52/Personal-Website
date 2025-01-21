@@ -1,0 +1,22 @@
+<div class="contact-section">
+    <div class="contact-container">
+      <div class="icon">
+        <img [src]="isDarkTheme ? 'assets/assets/mail-b.svg' : 'assets/assets/mail.svg'" alt="mail" />
+      </div>
+      <h2>GET IN TOUCH!</h2>
+      <p>
+        Whether you have an idea for a project or just want to chat, feel free to
+        shoot me an email!
+      </p>
+      <button [ngClass]="{'say-hello-button':!isDarkTheme,'say-hello-button-b': isDarkTheme}" (click)="sendMail()">Say Hello</button>
+    </div>
+    <div class="social-icons">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/sneh-sinha/"><img [src]="isDarkTheme ? 'assets/assets/linkedin-b.svg' : 'assets/assets/linkedin.svg'" alt="linkedin"></a></li>
+          <li><a href="https://www.instagram.com/sneh_.sinha/"><img [src]="isDarkTheme ? 'assets/assets/insta-b.svg' : 'assets/assets/insta.svg'" alt="Insta"></a></li>
+          <li><a href="https://x.com/Sneh_s52"><img [src]="isDarkTheme ? 'assets/assets/X-b.svg' : 'assets/assets/X.svg'" alt="X"></a></li>
+          <li><a href="https://github.com/Sneh-s52"><img [src]="isDarkTheme ? 'assets/assets/github-b.svg' : 'assets/assets/github.svg'" alt="github"></a></li>
+        </ul>
+    </div>
+  </div>
+

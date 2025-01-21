@@ -1,0 +1,65 @@
+/* General styling for the home background */
+.home-background {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-container {
+  z-index: 1;
+}
+
+.intro-title {
+  min-height: 7.5rem;
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.home-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      transparent,
+      transparent 50px,
+      rgb(145, 145, 145) 51px
+    ),
+    repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 50px,
+      rgb(145, 145, 145) 51px
+    );
+  background-size: cover;
+  z-index: 0;
+  transform: perspective(1000px) rotateX(45deg);
+  transform-origin: top center;
+  animation: moveLines 10s linear infinite;
+}
+
+@keyframes moveLines {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: -100px -100px, -100px -100px;
+  }
+}

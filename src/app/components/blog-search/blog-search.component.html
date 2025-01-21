@@ -1,0 +1,16 @@
+<div class="search-container">
+    <input
+      type="text"
+      placeholder="Search blogs..."
+      [(ngModel)]="searchTerm"
+      (ngModelChange)="filterBlogs()"
+      class="search-bar"
+    />
+  </div>
+  
+  <div class="blog-list">
+    <div *ngFor="let blog of filteredBlogs" class="blog-card">
+      <h3>{{ blog.title }}</h3>
+      <p>{{ blog.description }}</p>
+    </div>
+  </div>

@@ -1,0 +1,60 @@
+nav {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  &.home-nav {
+    position: fixed;
+    background-color: transparent;
+  }
+
+  &.default-nav {
+    position: relative;
+    background-color: transparent;
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .logo a img{
+    display: flex;
+    align-items: center;
+    &:hover{
+      cursor: pointer;
+      filter:contrast(0.4);
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+
+    li {
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        color: inherit; 
+        transition: color 0.3s;
+
+        &:hover {
+          color: gray;
+        }
+      }
+      img {
+        &:hover {
+          cursor: pointer;
+          filter: contrast(0.4);
+        }
+      }
+    }
+  }
+}
