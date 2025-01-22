@@ -31,14 +31,14 @@ export class ExperienceComponent implements OnInit {
       title: 'CodeBreak',
       description: 'A blend of coding (GitHub) and taking breaks with Pomodoro and Reddit.',
       image: 'assets/assets/code-break.png',
-      website: null,
-      github: 'https://github.com/DeFi-Unchained-IITK',
+      website: 'https://code-break.vercel.app/',
+      github: 'https://github.com/Sneh-s52/CodeBreak',
     },
     {
       title: 'Personal Website',
       description: 'My personal website built on Angular Framework',
       image: '/assets/assets/website.png',
-      website: null,
+      website: 'https://snehsinha.vercel.app/',
       github: 'https://github.com/DeFi-Unchained-IITK',
     },
     {
