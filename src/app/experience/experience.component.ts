@@ -39,7 +39,7 @@ export class ExperienceComponent implements OnInit {
       description: 'My personal website built on Angular Framework',
       image: '/assets/assets/website.png',
       website: 'https://snehsinha.vercel.app/',
-      github: 'https://github.com/DeFi-Unchained-IITK',
+      github: 'https://github.com/Sneh-s52/Personal-Website',
     },
     {
       title: 'Price Co-Reversal',
