@@ -14,7 +14,7 @@ import { DarkThemeService } from './services/dark-theme.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  title = 'website';
+  title = 'Sneh Sinha';
   isHomePage: boolean = false;
   public isDarkTheme = false;
   constructor(private router: Router, private themeService: DarkThemeService) {}
